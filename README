@@ -1,0 +1,49 @@
+This is a port of the Squeak VM for the Nintendo DS.
+
+* Building:
+  
+  1) Prerequisites:
+  
+  - GNU Make
+  - devKitARM, a gcc tool chain for ARM (http://devkitpro.org)
+  - libnds
+  - Chishm's libfat (http://chishm.drunkencoders.com/libfat/) 
+
+  2) Build:
+  
+  - enter platforms/nds/vm/
+  - set the global variable DEVKITARM to your devKitARM installation.
+  - run make
+
+  If all goes well, you should have a vm.nds file that you can run
+  on your NDS or in an emulator (tested in desmume).
+
+* Using the vm:
+
+  The vm expects an image named 'squeak.image' on the same
+  directory as 'vm.nds'.
+
+  Controls:
+
+    R/L swap up and down screen.
+    touch        : mouse button 1 
+    touch + left : mouse button 2
+    touch + right: mouse button 3
+
+* Known Bugs:
+  
+  - There seems to be a problem with the file time creation and modification values.
+  - The avalaible memory is hardcoded in globals.h to 3000000, it would be nice
+    to have more control over it.
+
+* License:
+
+This code is based on the squeak unix vm:
+ Copyright (C) 1996-2004 by Ian Piumarta and other authors/contributors
+ listed elsewhere in this file.
+
+code under platforms/nds/ is distributed under the GNU GPL.
+Please refer to file platforms/nds/doc/COPYRIGHT.
+
+--
+Pablo Oliveira <pablo@sifflez.org>

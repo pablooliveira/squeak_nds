@@ -1,0 +1,12 @@
+Here is a working small squeak image that you can test 
+with squeak vm for nds.
+
+To make a fat image that you can use with desmume:
+
+dd if=/dev/zero of=test1.image bs=1048576 count=10
+mkdosfs -F16 test1.image
+mount -o loop test1.image <mount_point>
+cp squeak.image squeak.changes <mount_point>
+umount <mount_point>
+
+then run 'make test' in platforms/nds/vm/
