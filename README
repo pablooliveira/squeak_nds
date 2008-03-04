@@ -39,8 +39,7 @@ This is a port of the Squeak VM for the Nintendo DS.
 * License:
 
 This code is based on the squeak unix vm:
- Copyright (C) 1996-2004 by Ian Piumarta and other authors/contributors
- listed elsewhere in this file.
+ Copyright (C) 1996-2004 by Ian Piumarta and other authors/contributors.
 
 code under platforms/nds/ is distributed under the GNU GPL.
 Please refer to file platforms/nds/doc/COPYRIGHT.
