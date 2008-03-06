@@ -74,7 +74,7 @@ time_t convertToSqueakTime(time_t unixTime)
 
 int ioSeconds(void) {
   // Return time in seconds since the epoch
-  return convertToSqueakTime(clock());
+  return convertToSqueakTime(time(NULL));
 }
 
 char *getImageName(void)
