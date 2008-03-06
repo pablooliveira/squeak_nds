@@ -33,7 +33,7 @@ This is a port of the Squeak VM for the Nintendo DS.
 * Known Bugs:
   
   - There seems to be a problem with the file time creation and modification values.
-  - The avalaible memory is hardcoded in globals.h to 3000000, it would be nice
+  - The available memory is hardcoded in globals.h to 3000000, it would be nice
     to have more control over it.
 
 * License:
